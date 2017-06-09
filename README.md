@@ -1,2 +1,8 @@
-# JavaApiFilter
-Java Api Filter Browser Extensions
+# JavaDocApiFilter
+Java Doc Api Filter Browser Extensions
+
+Web Extension support:
+- Firefox
+- Google Chrome
+
+

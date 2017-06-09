@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "JavaDocApiFilter",
+	"description": "Javadoc Api Filter",
+	"version": "1.0",
+	"icons": {
+		"48": "icons/java_48x48.png",
+		"96": "icons/java_96x96.png"
+	},
+	"browser_action": {
+		"default_title": "JavaDocFilter",
+		"default_popup": "popup.html",
+		"default_icon": "icons/java_48x48.png"
+	},
+	"content_scripts": [{
+		"matches": [
+			"https://docs.oracle.com/javase/8/docs/api/*",
+			"https://docs.oracle.com/javase/7/docs/api/*",
+			"https://docs.oracle.com/javaee/7/api/*",
+			"http://docs.spring.io/*",
+			"https://docs.spring.io/*"
+		],
+		"js": [
+			"jquery-3.2.1.min.js",
+			"contentscript.js"
+		],
+		"all_frames": true
+	}]
+	
+}
